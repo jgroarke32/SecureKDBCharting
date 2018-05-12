@@ -1,0 +1,288 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Learn how to build ASP.NET apps that can run anywhere.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    There are powerful new features in Visual Studio for building modern web apps.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Bring in libraries from NuGet and npm, and automate tasks using Grunt or Gulp.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<table class="table">
+    @foreach (var claim in User.Claims)
+    {
+        <tr>
+            <td>@claim.Type</td>
+            <td>@claim.Value</td>
+        </tr>
+    }
+</table>
+<div class="row">
+    <div class="col-md-3">
+        <h2>Application uses</h2>
+        <ul>
+            <li>Sample pages using ASP.NET Core MVC</li>
+            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>How to</h2>
+        <ul>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Overview</h2>
+        <ul>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Run &amp; Deploy</h2>
+        <ul>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
+        </ul>
+    </div>
+</div>
+<div class="pure-u-1">
+    <div id="line-example">
+        <h2>Simple Line Chart Example</h2>
+        <div style="width:75%;height:40%">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <form action="">
+        <input type="button" value="connect" onclick="connect()">
+        <input type="text" id="x" placeholder="q)">
+        <input type="submit" value="send" onclick="return send()">
+        <input type="button" value="close" onclick="ws.close()">
+    </form>
+<textarea id="out" rows=25 cols=80></textarea>
+</div>
+<script>
+        var roomarray = [];
+        var queue = [0];
+        var multiarray = [queue];
+        max = 30; min = -30;
+
+        var queuelabels = [];
+
+        var config = {
+            type: 'line',
+            data: {
+                labels: queuelabels,
+                datasets: []
+            },
+
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            //    min: -100,
+                            //  max: 100,
+                            // beginAtZero:true
+                        }
+                    }],
+                    xAxes: [{
+                        type: "time",
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Date'
+                        },
+                        ticks: {
+                            autoSkip: true
+                        }
+
+                    }],
+                }
+            }
+        };
+
+
+        var ctx = document.getElementById("canvas").getContext("2d");
+        var myChart = new Chart(ctx, config);
+        var functionsarray = [];
+        var ws, out = document.getElementById("out");
+        function connect() {
+            if ("WebSocket" in window) {
+                ws = new WebSocket("wss://" + "35.204.238.205" + ":" + "5656" + "/");
+                functionsarray.push("getrtfeed[]");
+                out.value = "connecting...";
+                ws.onopen = function (e) { out.value += "connected"; multiarray.pop(); }
+                ws.onclose = function (e) { out.value = "disconnected"; }
+                ws.onmessage = function (e) {
+                    IsJsonString(e.data);
+                }
+                ws.onerror = function (e) { out.value = e.data; }
+            } else alert("WebSockets not supported on your browser.");
+        }
+
+        function IsJsonString(str) {
+            try {
+                var parsed = JSON.parse(str);
+                var data = parsed[0];
+                var room = data.sym;
+                if (roomarray.includes(room) === false) {
+
+                    roomarray.push(room);
+                };
+                var roomindex = roomarray.indexOf(room);
+                var flowrate = data.temp;
+                var time = data.time;
+                var time = time.replace('0D', '');
+                var hour = time.charAt(0) + time.charAt(1);
+                var minute = time.charAt(3) + time.charAt(4);
+                var sec = time.charAt(6) + time.charAt(7);
+                var millisec = time.charAt(8) + time.charAt(9) + time.charAt(10);
+                var d = new Date();
+                var momentDate = moment(d);
+                d.setHours(hour, minute, sec, millisec);
+                if (flowrate == null) {
+                    out.value = str;
+                }
+                else {
+                    var roomdata = multiarray[roomindex];
+                    if (roomdata === undefined) { roomdata = []; }
+                    roomdata.push(flowrate);
+                    multiarray[roomindex] = roomdata;
+                    if (myChart.data.datasets.length <= roomindex) {
+                        var color = random_rgba();
+                        myChart.data.datasets[roomindex] =
+                            {
+                                label: room,
+                                data: multiarray[roomindex],
+                                backgroundColor: color,
+                                borderColor: color,
+                                borderWidth: 1
+                            };
+                    }
+
+                    else {
+                        myChart.data.datasets[roomindex].data = multiarray[roomindex];
+                    }
+
+                    if (multiarray[0].length > queuelabels.length) { queuelabels.push(d) };
+
+                    //    if (myChart.data.datasets[0].data.length > 12) {
+                    //      queuelabels.shift();
+                    //    for (i = 0; i < multiarray.length; i++) {
+
+                    //      multiarray[i].splice(0, 1);
+                    // }
+                    //};
+
+
+                    //   myChart.options.scales.yAxes[0].ticks.min = -60;
+                    //  myChart.options.scales.yAxes[0].ticks.max = 50;
+                    console.log(myChart);
+                    if (myChart.data.labels.length > 20) { }
+                    //myChart.options.scales.xAxes[0].ticks.autoSkip = true
+
+                    myChart.update();
+
+
+                }
+            } catch (e) {
+                out.value = str;
+            }
+            return true;
+        }
+
+        function newDate(days) {
+            return moment().add(days, 'd');
+        }
+
+        function send() {
+            x = document.getElementById("x");
+            v = x.value;
+            ws.send(v);
+            out.value = "sent " + v;
+            return false;
+        }
+
+        setInterval(function () {
+            var list = functionsarray;
+            for (i = 0; i < list.length; i++) {
+                ws.send(list[i]);
+            }
+        }, 5000);
+
+        function getListofFunctions() {
+
+
+
+        }
+        function random_rgba() {
+            var o = Math.round, r = Math.random, s = 255;
+            return 'rgba(' + o(r() * s) + ',' + o(r() * s) + ',' + o(r() * s) + ',' + r().toFixed(1) + ')';
+        }
+</script>
