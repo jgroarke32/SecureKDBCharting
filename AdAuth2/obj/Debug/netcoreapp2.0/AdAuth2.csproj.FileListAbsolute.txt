@@ -1,0 +1,12 @@
+C:\Users\jgroa\source\repos\AdAuth2\AdAuth2\bin\Debug\netcoreapp2.0\AdAuth2.deps.json
+C:\Users\jgroa\source\repos\AdAuth2\AdAuth2\bin\Debug\netcoreapp2.0\AdAuth2.runtimeconfig.json
+C:\Users\jgroa\source\repos\AdAuth2\AdAuth2\bin\Debug\netcoreapp2.0\AdAuth2.runtimeconfig.dev.json
+C:\Users\jgroa\source\repos\AdAuth2\AdAuth2\bin\Debug\netcoreapp2.0\AdAuth2.dll
+C:\Users\jgroa\source\repos\AdAuth2\AdAuth2\bin\Debug\netcoreapp2.0\AdAuth2.pdb
+C:\Users\jgroa\source\repos\AdAuth2\AdAuth2\obj\Debug\netcoreapp2.0\AdAuth2.csprojResolveAssemblyReference.cache
+C:\Users\jgroa\source\repos\AdAuth2\AdAuth2\obj\Debug\netcoreapp2.0\AdAuth2.csproj.CoreCompileInputs.cache
+C:\Users\jgroa\source\repos\AdAuth2\AdAuth2\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\jgroa\source\repos\AdAuth2\AdAuth2\obj\Debug\netcoreapp2.0\AdAuth2.AssemblyInfoInputs.cache
+C:\Users\jgroa\source\repos\AdAuth2\AdAuth2\obj\Debug\netcoreapp2.0\AdAuth2.AssemblyInfo.cs
+C:\Users\jgroa\source\repos\AdAuth2\AdAuth2\obj\Debug\netcoreapp2.0\AdAuth2.dll
+C:\Users\jgroa\source\repos\AdAuth2\AdAuth2\obj\Debug\netcoreapp2.0\AdAuth2.pdb
