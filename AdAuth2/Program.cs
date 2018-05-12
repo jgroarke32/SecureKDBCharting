@@ -18,8 +18,9 @@ namespace AdAuth2
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
+           WebHost.CreateDefaultBuilder(args)
+            .UseStartup<Startup>()
+            .UseKestrel(options => options.ConfigureEndpoints())
+            .Build();
     }
 }
